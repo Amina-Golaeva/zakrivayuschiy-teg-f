@@ -1,1 +1,37 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --themes-background: #ffffff;
+  --themes-mainColor: #000000;
+  --button_text-color: #ffffff;
+  --fill-contour: #000000;
+  --fill-heart: #ff0000;
+  --font-weight-title: 700;
+  --font-weight: 400;
+  --Inter: "Inter", sans-serif;
+  --PressStart2P: "PressStart2P", sans-serif;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 1px,
+      rgb(244 152 173 / 0) 1px,
+      rgb(244 152 173 / 0) 2px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3,
+      #d3d3d3 1px,
+      rgb(244 152 173 / 0) 1px,
+      rgb(244 152 173 / 0) 2px
+    ),
+    repeating-linear-gradient(0deg, #1a1a1a, #e7e7e7 100%);
+  --width-content-section: 48.33%;
+  --width-header: 48.61%;
+  --watermark_shadow: #ffffff;
+}
+
+@media (width <= 375px) {
+  :root {
+    --width-content-section: 100%;
+    --width-header: 100%;
+  }
+}
