@@ -29,6 +29,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 21px;
+  font-variation-settings: var(--font-weight)
 }
 .header {
   font-family: var(--PressStart2P);
@@ -170,7 +171,7 @@
 }
 .heading_content-section {
   font-size: 18px;
-  font-variation-settings: var(--font-weight-title);
+ 
   margin: 3px 24px 5px 8px;
   line-height: 21.78px;
 }
@@ -248,7 +249,7 @@
   margin-top: 26px;
   margin-left: 25px;
   margin-right: 25px;
-  font-variation-settings: var(--font-weight);
+
 }
 .sparks {
   opacity: 0;
@@ -345,10 +346,7 @@
 }
 
 .button__text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 8px;
+  align-self: center;
   position: relative;
   z-index: 1;
   color: var(--button_text-color);
@@ -393,18 +391,27 @@
   padding-top: 16px;
   padding-bottom: 15px;
   width: 340px;
+  line-height: 12.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 105px;
 }
 @media (width <= 375px) {
   .button_save {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 306px;
+    margin-bottom: 100px;
   }
 }
 
 .floppy {
   width: 21px;
   height: 21px;
+  color: var(--button_text-color);
+  mix-blend-mode: difference;
 }
 
 @media (width <= 375px) {
@@ -415,20 +422,15 @@
   }
 }
 
-.button_save_text {
-  line-height: 12.5px;
-  padding-top: 3.5px;
-}
-@media (width <= 375px) {
-  .button_save_text {
-    padding-top: 0;
-  }
-}
+
 dialog {
   font-family: var(--PressStart2P);
   padding: 28px 32.5px 25px 31.5px;
   width: clamp(340px, 35%, 355px);
   text-transform: uppercase;
+  border-color: var(--themes-mainColor);
+  background-color: var(--themes-background);
+  color: var(--themes-mainColor);
 }
 @media (width <= 375px) {
   dialog {
