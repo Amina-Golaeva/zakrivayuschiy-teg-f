@@ -29,7 +29,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 21px;
-  font-variation-settings: var(--font-weight)
+  font-variation-settings: 'wght' var(--font-weight);
 }
 .header {
   font-family: var(--PressStart2P);
@@ -171,7 +171,7 @@
 }
 .heading_content-section {
   font-size: 18px;
- 
+  font-variation-settings: 'wght' var(  --font-weight-title);
   margin: 3px 24px 5px 8px;
   line-height: 21.78px;
 }
@@ -400,6 +400,7 @@
 }
 @media (width <= 375px) {
   .button_save {
+    flex-direction: column;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 306px;
