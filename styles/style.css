@@ -32,7 +32,6 @@
   font-variation-settings: "wght" var(--font-weight);
   padding-bottom: 105px;
   padding-top: 102px;
-
 }
 
 @media (width <= 375px) {
@@ -40,16 +39,17 @@
     padding-bottom: 100px;
   }
 }
-.page-content {
-width: var(--width-page);
 
+.page-content {
+  width: var(--width-page);
 }
+
 @media (width <= 375px) {
   .page-content {
-    width:100%;
-
+    width: 100%;
   }
 }
+
 .header {
   font-family: var(--accent-font);
   margin-bottom: 100px;
@@ -302,7 +302,6 @@ width: var(--width-page);
 .like-icon .main-body {
   transition-timing-function: linear;
   transition: fill 0.3s;
-
 }
 
 .like-icon:hover .core {
@@ -315,7 +314,7 @@ width: var(--width-page);
 
 .like-icon:hover .main-body {
   fill: var(--fill-contour);
-  transition-delay: 0.05s; 
+  transition-delay: 0.05s;
 }
 
 .like-icon:not(:hover) .main-body {
@@ -330,21 +329,17 @@ width: var(--width-page);
 
 .like-icon:active .main-body {
   fill: var(--fill-heart);
-  transition-delay: 0.05s; 
+  transition-delay: 0.05s;
 }
-
 
 .like-icon.is-liked .core {
   fill: var(--fill-heart);
 }
 
-
 .like-icon.is-liked .main-body {
   fill: var(--fill-heart);
   transition-delay: 0.05s;
 }
-
-
 
 .like-icon.is-liked .contour {
   fill: var(--fill-heart);
@@ -372,14 +367,12 @@ width: var(--width-page);
   padding: 0;
 }
 
-
 .card__icon-button:focus {
   outline: none;
 }
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--themes-main-color);
-
 }
 
 .button {
@@ -462,7 +455,6 @@ width: var(--width-page);
   flex-direction: row;
   justify-content: center;
   gap: 8px;
-
 }
 
 @media (width <= 375px) {
@@ -510,7 +502,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width:293px;
+  max-width: 293px;
   min-width: 257px;
 }
 
@@ -548,4 +540,3 @@ dialog::backdrop {
   background-color: #000000;
   opacity: 75%;
 }
-
