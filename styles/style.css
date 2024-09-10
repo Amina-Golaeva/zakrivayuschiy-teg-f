@@ -295,13 +295,11 @@
 
 .like-icon .core {
   fill: transparent;
-  transition-timing-function: linear;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon .main-body {
-  transition-timing-function: linear;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .core {
@@ -319,8 +317,7 @@
 
 .like-icon:not(:hover) .main-body {
   fill: transparent;
-  transition-timing-function: linear;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .core {
@@ -343,9 +340,7 @@
 
 .like-icon.is-liked .contour {
   fill: var(--fill-heart);
-  transition-timing-function: linear;
-  transition: fill 0.3s;
-  transition-delay: 0.06s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .heart {
@@ -463,7 +458,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
     width: 306px;
-    margin-bottom: 100px;
   }
 }
 
@@ -484,27 +478,27 @@
 
 dialog {
   font-family: var(--accent-font);
-  padding: 28px 30px 25px 30px;
   width: clamp(340px, 35%, 355px);
   text-transform: uppercase;
   border-color: var(--themes-main-color);
   background-color: var(--themes-background);
   color: var(--themes-main-color);
+  padding: 28px 30px 25px 30px;
 }
 
 @media (width <= 375px) {
   dialog {
-    padding: 30px 42px 30px 42px;
+    padding: 30px 36px;
   }
 }
 
+ 
 form {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 293px;
-  min-width: 257px;
 }
+
 
 .dialog_content {
   display: grid;
@@ -513,6 +507,7 @@ form {
 }
 
 .floppy_dialog {
+  fill: var(--themes-main-color);
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -524,7 +519,7 @@ form {
 
 .button_dialog {
   padding: 10px 132.5px;
-  width: 293px;
+  width: 100%; 
   line-height: 12.6px;
   text-transform: uppercase;
 }
@@ -532,7 +527,6 @@ form {
 @media (width <= 375px) {
   .button_dialog {
     padding: 11px 114.5px;
-    width: 257px;
   }
 }
 
