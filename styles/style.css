@@ -492,13 +492,11 @@ dialog {
   }
 }
 
- 
 form {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
 
 .dialog_content {
   display: grid;
@@ -519,7 +517,7 @@ form {
 
 .button_dialog {
   padding: 10px 132.5px;
-  width: 100%; 
+  width: 100%;
   line-height: 12.6px;
   text-transform: uppercase;
 }
